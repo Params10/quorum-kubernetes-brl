@@ -3,9 +3,12 @@ quorumFlags:
   removeGenesisOnDelete: true
 
 cluster:
-  provider: local  # choose from: local | aws | azure
+  provider: gke  # choose from: local | aws | azure
   cloudNativeServices: false 
-  
+gke:
+  serviceAccountName: brlparam@brlquorumhyperledger.iam.gserviceaccount.com  # The name of the GKE service account to use
+  region: us-central1-c # (Optional) Specify the region for GKE
+  projectID: blockchainatasu  # The GCP project ID where GKE is deployed  
 aws:
   # the aws cli commands uses the name 'quorum-sa' so only change this if you altered the name
   serviceAccountName: quorum-sa
@@ -33,7 +36,7 @@ rawGenesisConfig:
         blockperiodseconds: 10
         epochlength: 30000
         requesttimeoutseconds: 20
-    gasLimit: '0xf7b760' 
+    gasLimit: '0x47b760' 
     difficulty: '0x1'
     coinbase: '0x0000000000000000000000000000000000000000'
   blockchain:
