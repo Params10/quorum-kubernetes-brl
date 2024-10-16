@@ -16,31 +16,31 @@ explorerConfig: |
   "nodes": [{
       "name": "validator1",
       "client": "besu",
-      "rpcUrl": "http://besu-node-validator-1-0.besu-node-validator-1.quorum.svc.cluster.local:8545",
+      "rpcUrl": "http://besu-node-validator-1.quorum.svc.cluster.local:8545",
       "privateTxUrl": ""
     },
     {
       "name": "validator2",
       "client": "besu",
-      "rpcUrl": "http://besu-node-validator-2-0.besu-node-validator-2.quorum.svc.cluster.local:8545",
+      "rpcUrl": "http://besu-node-validator-2.quorum.svc.cluster.local:8545",
       "privateTxUrl": ""
     },
     {
       "name": "validator3",
       "client": "besu",
-      "rpcUrl": "http://besu-node-validator-3-0.besu-node-validator-3.quorum.svc.cluster.local:8545",
+      "rpcUrl": "http://besu-node-validator-3.quorum.svc.cluster.local:8545",
       "privateTxUrl": ""
     },
     {
       "name": "validator4",
       "client": "besu",
-      "rpcUrl": "http://besu-node-validator-4-0.besu-node-validator-4.quorum.svc.cluster.local:8545",
+      "rpcUrl": "http://besu-node-validator-4.quorum.svc.cluster.local:8545",
       "privateTxUrl": ""
     },
     {
       "name": "member1",
       "client": "besu",
-      "rpcUrl": "http://besu-node-member-1-0.besu-node-member-1.quorum.svc.cluster.local:8545",
+      "rpcUrl": "http://besu-node-member-1.quorum.svc.cluster.local:8545",
       "privateTxUrl": "http://besu-node-member-1.quorum.svc.cluster.local:9080",
       "privateKey": "0x8f2a55949038a9610f50fb23b5883af3b4ecb3c3bb792cbcefbd1542c692be63",
       "accountAddress": "0xfe3b557e8fb62b89f4916b721be55ceb828dbd73"
@@ -73,7 +73,7 @@ explorerEnvConfig: |-
 
   NEXTAUTH_URL=http://localhost:25000
   NEXTAUTH_URL_INTERNAL=http://localhost:25000
-  NEXTAUTH_SECRET=
+  NEXTAUTH_SECRET=31332f4fc64aa7c2bad0d80c18633a61
   # To generate NEXTAUTH_SECRET: `openssl rand -hex 32` or go to https://generate-secret.now.sh/32
 
   local_username=

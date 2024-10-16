@@ -37,6 +37,14 @@ spec:
             name: besu-node-rpc-1
             port:
               number: 8545
+      - path: /bootnode
+        pathType: Prefix
+        backend:
+          service:
+            name: besu-node-bootnode-1
+            port:
+              number: 30303
+
       - path: /validator-1
         pathType: Prefix
         backend:
