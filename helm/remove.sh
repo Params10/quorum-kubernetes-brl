@@ -15,3 +15,10 @@ helm uninstall validator-4 --namespace quorum
 helm uninstall member-1 --namespace quorum
 helm uninstall rpc-1 --namespace quorum
 helm uninstall quorum-network-ingress --namespace quorum
+kubectl delete jobs --all -n quorum
+kubectl delete pods --all -n quorum
+kubectl delete ConfigMaps --all -n quorum
+kubectl delete Secrets --all -n quorum
+kubectl delete PersistentVolumeClaims --all -n quorum
+
+

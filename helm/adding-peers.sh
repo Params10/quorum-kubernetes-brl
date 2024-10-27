@@ -12,6 +12,8 @@ sleep 5
 kubectl port-forward besu-node-validator-4-0 8549:8545 -n quorum &
 sleep 5
 kubectl port-forward besu-node-rpc-1-0  8550:8545 -n quorum &
+sleep 5
+kubectl port-forward besu-node-rpc-1-0  8551:8546 -n quorum &
 
 # Wait for the port-forward to be established
 sleep 5

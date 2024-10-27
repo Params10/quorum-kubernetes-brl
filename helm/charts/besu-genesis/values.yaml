@@ -4,18 +4,19 @@ quorumFlags:
   removeGenesisOnDelete: true
 
 cluster:
-  provider: gke  # choose from: local | aws | azure
+  provider: local  # choose from: local | aws | azure
   cloudNativeServices: false # set to true to use Cloud Native Services (SecretsManager and IAM for AWS; KeyVault & Managed Identities for Azure)
 
 gke:
   serviceAccountName: brlparam@brlquorumhyperledger.iam.gserviceaccount.com  # The name of the GKE service account to use
   region: us-central1-c # (Optional) Specify the region for GKE
   projectID: blockchainatasu  # The GCP project ID where GKE is deployed
+
 aws:
   # the aws cli commands uses the name 'quorum-sa' so only change this if you altered the name
   serviceAccountName: quorum-sa
   # the region you are deploying to
-  region: ap-southeast-2
+  region: us-east-1
 
 azure:
   serviceAccountName: quorum-sa
